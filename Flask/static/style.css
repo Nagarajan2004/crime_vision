@@ -1,0 +1,105 @@
+h1{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin-top: 30px;
+}
+.header {
+    background: #00129A;
+    padding: 5px 30px;
+    color: white;
+    margin-left: -1%;
+    width: 96%;
+    margin-top: -1%;
+    display: flex;
+    height: 115px;
+    position: absolute;
+}
+img{
+    width: 70px;
+    height: 100px;
+    margin-top: 0.6%;
+}
+.header ul{
+    margin-left: 40%;
+}
+.spacing{
+    word-spacing: 100px;
+}
+.header li{
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+}
+.header li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: floralwhite;
+    margin-left: 0px;
+    font-family:  "Trebuchet MS", Helvetica, sans-serif;
+}
+.header ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    transition: 0.5s;
+}
+.header ul li:hover::after{
+    width: 100%;
+}
+.image {
+    margin-top: 10%;
+    width: 600px;
+    height: 280px;
+    margin-left: 55%;
+}
+.heading1{
+    margin-top: -15%;
+    margin-left: 50px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.heading2{
+    margin-top: -35px;
+    margin-left: 150px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.content1{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 100px;
+}
+.fingerprint{
+    width: 400px;
+    height: 400px;
+    margin-top: 10%;
+    margin-left: 8%;
+}
+.line{
+    margin-top: -20%;
+    margin-left: 50%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.file-upload{
+    display: inline-block;
+    /* padding: 0 12px 12px 12px; */
+    /* height: 50px; */
+    /* width: 100px; */
+    /* background-color: #00129A; */
+    /* color: white; */
+    margin-left: 60%;
+    /* cursor: pointer; */
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /* border-radius: 10px; */
+}
+.file-upload:hover{
+    background-color: navy;
+}
+.file-upload input[type="file"]{
+    display: none;
+}
+
+#form,#prediction_out{
+    margin-left: 60%;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/js/JScript.js"></script>
+    <title>Prediction</title>
+</head>
+<body>
+    <div class="header">
+        <img src="../static/img/detective.png">
+        <h1>OFFENCE TRACKER</h1>
+        <ul>
+            <div class="spacing"><li><h2><a href="index.html">Home</a></h2></li>
+            <li><h2><a href="predict.html">Predict</a></h2></li></div>
+        </ul>
+    </div><br>
+    <div>
+        <div>
+            <img class="fingerprint" src="../static/img/fingerprint.png">
+        </div>
+        <div >
+            <h1 class="line">Drop in the image to get the prediction</h1>
+        </div class ="prediction_input">
+        <form id="form" action="/result" method="post"  enctype="multipart/form-data">
+            <input type="file" id="imageupload"  name="image" accept="image/*" class="input-image">
+            <input type="submit" class="submitbtn">
+          </form>
+        </div>
+        <h3 id="prediction_out">
+            THE PREDICTION IS:   {{pred}}
+        </h3>
+    </div></div></body></html>
